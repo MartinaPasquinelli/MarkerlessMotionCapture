@@ -1,66 +1,60 @@
-# ImageProcessing - Tesina
-_Alessio Giorgetti s345637_
-_Martina Pasquinelli s363700_
+# Markerless Motion Capture: Analysis and Comparison of Computer Vision Models for 3D Animation in Unity
+
+_Alessio Giorgetti s345637_  
+_Martina Pasquinelli s363700_  
 _Valentina Giordano s364229_
-
-
 
 ---
 
-In questo Repository si è cercato di analizzare e sviluppare un progetto di Image Processing per l'animazione virtuale tramite *motion capture* (_"Un sistema di motion capture markerless basato su computer vision"_).
+This repository documents the analysis and development of an Image Processing project for virtual animation through *motion capture* (*"A Markerless Motion Capture System Based on Computer Vision"*).
 
-Il lavoro è stato svolto nella seguente maniera:
-- ricerca e analisi dei modelli di _human detection_, sia forniti tramite mail, sia ricercati in maniera aggiuntiva sul web.
-- selezione dei modelli più efficienti e "fattibili" per essere scaricati e testati.
-- scelta della pipeline di lavoro sulla condivisione dei dati di output per animare un avatar su Unity in tempo reale.
-- scrittura del codice per i 3 modelli scelti.
-- creazione del progetto su Unity e scrittura del codice C# per la ricezione dei dati tramite rete.
-- scrittura della tesina e testing.
-- estensione della tesina per il supporto MacOs
-- correzione finale per il supporto al movimento in uno spazio 3D dell'avatar
+The work was carried out as follows:
 
-La tesina contiene tutti i passaggi svolti e analizzati, con l'aggiunta di alcune estensioni proposte per un'eventuale prolungamento del progetto.
+- Research and analysis of *human detection* models, including those suggested via email and additional models found through online research.
+- Selection of the most efficient and feasible models to download and test.
+- Definition of a workflow pipeline for sharing output data and animating an avatar in Unity in real time.
+- Implementation of the code for the three selected models.
+- Creation of the Unity project and implementation of the C# code required to receive data over the network.
+- Writing of the report and testing.
+- Extension of the report to support macOS.
+- Final correction to enable the avatar to move in three-dimensional space.
 
-Inoltre, è stato testato un tentativo di unificazione del progetto stesso, per creare un'unico programma che permettesse l'analisi ed il confronto dei tre modelli scaricati su un unico sistema operativo, per valutare prestazioni e caratteristiche a confronto a partire dalla stessa architettura. Questo documento fornisce allo stesso tempo un aiuto all'installazione e al funzionamento del progetto su una macchina MacOs.
+The report describes all the steps carried out and the analyses performed, along with several proposed extensions for potential future development of the project.
 
-Il documento aggiuntivo 'correzione_tesina.md' prevede una correzione proposta per la predisposizione del movimento dell'avatar virtuale in uno spazio tridimensionale.
+Additionally, an attempt was made to consolidate the project into a single application capable of analysing and comparing the three downloaded models on the same operating system. The aim was to evaluate their performance and characteristics using the same system architecture. This document also provides guidance on installing and running the project on macOS.
 
-Il Repository è organizzato in questo modo:
+The additional document `correzione_tesina.md` contains a proposed correction to enable the virtual avatar to move in three-dimensional space.
+
+The repository is organised as follows:
+
 ```text
-ImageProcessing/projects_files
+Markerless Motion Capture/projects_files
 │
-├── 1_alphapose+Hybrik/            # codice per lo sviluppo del primo modello
-│                                  
+├── 1_alphapose+Hybrik/            # Code for the first model
 │
-├── 2_mmDec+Hybrik+Unity/          # codice per lo sviluppo del secondo modello
-│   
+├── 2_mmDec+Hybrik+Unity/          # Code for the second model
 │
-├── 3_sam+Unity/                   # codice per lo sviluppo del terzo modello
-│   
-│       
-├── materiale/                     # tutto il materiale utile alla nostra ricerca
-│                                  # non necessariamente utile per la ricerca finale
+├── 3_sam+Unity/                   # Code for the third model
 │
-├── test_vale/                     # cartella con i file di estensione della tesina
-│   
+├── materiale/                     # All materials useful for the research,
+│                                  # including those not directly used
+│                                  # in the final implementation
 │
-├── Unity/                         # file di progetto Unity
-│   
+├── test_vale/                     # Folder containing report extensions
 │
-└── video/                         # video di test          
+├── Unity/                         # Unity project files
+│
+└── video/                         # Test videos
 ```
 
-```
+```text
 ImageProcessing
 │
-├── tesina.md                     # Documento per la consegna
-│   
+├── tesina.md                      # Main project report
 │
-├── estensione_tesina.md          # Estensione della tesina
-│   
+├── estensione_tesina.md           # Report extension
 │
-├── correzione_tesina.md          # Correzione della tesina
-│   
+├── correzione_tesina.md           # Report correction
 │
-└── README.md   
+└── README.md
 ```
